@@ -14,7 +14,7 @@ namespace GreenBook
             InitializeComponent();
 
 
-            MainPage = new MainPage();
+            MainPage = new Home(); // this is where you set the starting page for the application
         }
 
         protected override void OnStart()
