@@ -16,5 +16,15 @@ namespace GreenBook.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+
+        /*public string ImageFiles
+        {
+            foreach ( )
+        }
+        */
+
+        //public Xamarin.Forms.ImageSource  { get; set; };
+
+    }
 }

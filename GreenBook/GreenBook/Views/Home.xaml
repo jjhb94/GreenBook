@@ -36,7 +36,8 @@
                         <!-- second Grid to begin Image horizontal scroll for views of the categories -->
 
                         <Label Text="Top Rated:" FontSize="24" />
-                        <!-- begin scroll of images 
+                        
+                        <!-- begin scroll of images -->
                         <CollectionView ItemsSource="{Binding Pictures}" ItemsLayout="HorizontalList">
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
@@ -55,7 +56,7 @@
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
-                        -->
+                        <!--  -->
                     </StackLayout>
                 </ScrollView>
             </StackLayout>

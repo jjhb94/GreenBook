@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Xamarin.Forms;
 
 namespace GreenBook.Droid
 {
@@ -20,6 +21,8 @@ namespace GreenBook.Droid
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
+            Forms.SetFlags("CollectionView_Experimental");
+
         }
     }
 }
