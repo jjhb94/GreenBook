@@ -11,7 +11,7 @@
                 <ScrollView Orientation="Vertical"> <!-- Begin Vertical Scroll View -->
                     <StackLayout>
                         <!-- Start the Toggle header columns -->
-                        <Grid  ColumnSpacing="200">
+                        <Grid >
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="*" />
@@ -24,13 +24,13 @@
                             </Grid.RowDefinitions>
                             <!-- this is where the top portion under the search banner will go "selector" fields for the Categories -->
                             <!-- TODO: add class for a font color CSS pages -->
-                            <StackLayout Spacing="40" Margin="30, 35, 30, 35" Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
+                            <StackLayout Spacing="10" Margin="10, 35, 10, 35" Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
                                 <!-- top, right, bottom, left-->
-                                <Label Text="Restaurants" Grid.Row="1" Grid.Column="0" FontSize="30" />
-                                <Label Text="Apparel" Grid.Row="1" Grid.Column="1" FontSize="30" />
-                                <Label Text="Events" Grid.Row="1" Grid.Column="2" FontSize="30" />
-                                <Label Text="Art" Grid.Row="1" Grid.Column="3" FontSize="30" />
-                                <Label Text="Services" Grid.Row="1" Grid.Column="4" FontSize="30" />
+                                <Label Text="Restaurants" Grid.Row="1" Grid.Column="0" FontSize="18" />
+                                <Label Text="Apparel" Grid.Row="1" Grid.Column="1" FontSize="18" />
+                                <Label Text="Events" Grid.Row="1" Grid.Column="2" FontSize="18" />
+                                <Label Text="Art" Grid.Row="1" Grid.Column="3" FontSize="18" />
+                                <Label Text="Services" Grid.Row="1" Grid.Column="4" FontSize="18" />
                             </StackLayout>
                         </Grid>
                         <!-- second Grid to begin Image horizontal scroll for views of the categories -->
