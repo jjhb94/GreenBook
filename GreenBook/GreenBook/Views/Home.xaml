@@ -11,7 +11,7 @@
                 <ScrollView Orientation="Vertical"> <!-- Begin Vertical Scroll View -->
                     <StackLayout>
                         <!-- Start the Toggle header columns -->
-                        <Grid >
+                        <Grid VerticalOptions="FillAndExpand" >
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
                                 <ColumnDefinition Width="*" />
