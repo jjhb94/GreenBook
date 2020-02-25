@@ -37,36 +37,31 @@
                 <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                     <Image Source="Food_icon.png" HeightRequest="50" HorizontalOptions="Center"/>
                     <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="50%" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
-                        <Label Text="Food" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
+                        <Label Text="Food" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                     <Image Source="Clothes_icon.png" HeightRequest="50" HorizontalOptions="Center"/>
                     <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="2.6 m/s" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
-                        <Label Text="Apparel" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
+                        <Label Text="Apparel" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                     <Image Source="Events_icon.png" HeightRequest="50" HorizontalOptions="Center"/>
                     <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="1011 hpa" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
-                        <Label Text="Events" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
+                        <Label Text="Events" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                     <Image Source="Art_icon.png" HeightRequest="50" HorizontalOptions="Center"/>
                     <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="24%" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
-                        <Label Text="Art" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
+                        <Label Text="Art" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Grid.Column="4" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                     <Image Source="Services_icon.png" HeightRequest="50" HorizontalOptions="Center"/>
                     <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                        <Label Text="24%" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
-                        <Label Text="Services" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
+                        <Label Text="Services" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                     </StackLayout>
                 </StackLayout>
             </Grid>
