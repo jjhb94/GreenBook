@@ -164,4 +164,28 @@
       <Version>4.4.0.991640</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\Food_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\Food_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\Food_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\Food_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\Food_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\Food_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\Food_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\Food_8.jpg" />
+  </ItemGroup>
 </Project>

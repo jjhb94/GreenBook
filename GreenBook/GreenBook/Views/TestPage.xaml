@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GreenBook.Views.TestPage">
+    <!-- set your main page "landing page on the App.xaml.cs page -->
+
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical">
+            <StackLayout>
+                <ScrollView Orientation="Vertical">
+                    <!-- Begin Vertical Scroll View -->
+                    <StackLayout>
+                        <!-- Start the Toggle header columns -->
+                        <Grid VerticalOptions="FillAndExpand" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Image Source="Banner_1.png" Aspect="Fill" HeightRequest="200" VerticalOptions="CenterAndExpand" />
+                            <!-- this is where the top portion under the search banner will go "selector" fields for the Categories -->
+                            <!-- TODO: add class for a font color CSS pages -->
+                            <StackLayout Spacing="10" Orientation="Horizontal" HorizontalOptions="Start" >
+                                <ImageButton Source="Menu_icon_1" WidthRequest="50" HeightRequest="50" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <!-- top, right, bottom, left
+                                <Label Text="Restaurants" Grid.Row="1" Grid.Column="0" FontSize="18" />
+                                <Label Text="Apparel" Grid.Row="1" Grid.Column="1" FontSize="18" />
+                                <Label Text="Events" Grid.Row="1" Grid.Column="2" FontSize="18" />
+                                <Label Text="Art" Grid.Row="1" Grid.Column="3" FontSize="18" />
+                                <Label Text="Services" Grid.Row="1" Grid.Column="4" FontSize="18" />
+                                -->
+                            </StackLayout>
+                        </Grid>
+                        <!-- second Grid to begin Image horizontal scroll for views of the categories -->
+
+                        <Label Text="Top Rated:" FontSize="24" />
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

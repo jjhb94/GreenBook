@@ -92,6 +92,7 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
+    <Folder Include="Resources\Images\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GreenBook\GreenBook.csproj">
@@ -100,25 +101,73 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Images\AfterCoding.jpg" />
+    <None Include="Resources\drawable\AfterCoding.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Images\debugging.jpg" />
+    <None Include="Resources\drawable\debugging.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Images\GoodBoy.jpg" />
+    <None Include="Resources\drawable\GoodBoy.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Images\Landed.jpg" />
+    <None Include="Resources\drawable\Landed.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Images\pacman.jpg" />
+    <None Include="Resources\drawable\pacman.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Images\Selfie.jpg" />
+    <None Include="Resources\drawable\Selfie.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Images\Thinking.jpg" />
+    <None Include="Resources\drawable\Thinking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable\Food_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable\Food_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable\Food_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable\Food_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable\Food_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable\Food_6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drawable\Food_7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Resources\drawable\Food_8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Food_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Banner_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Menu_icon_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Food_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Clothes_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Events_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Art_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Services_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

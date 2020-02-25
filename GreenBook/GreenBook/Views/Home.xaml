@@ -2,65 +2,103 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GreenBook.Views.Home">
-    <!-- set your main page "landing page on the App.xaml.cs page -->
-    
-    <ContentPage.Content>
-        
-        <StackLayout Orientation="Vertical">
-            <StackLayout>
-                <ScrollView Orientation="Vertical"> <!-- Begin Vertical Scroll View -->
-                    <StackLayout>
-                        <!-- Start the Toggle header columns -->
-                        <Grid VerticalOptions="FillAndExpand" >
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
-                            <!-- this is where the top portion under the search banner will go "selector" fields for the Categories -->
-                            <!-- TODO: add class for a font color CSS pages -->
-                            <StackLayout Spacing="10" Margin="10, 35, 10, 35" Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
-                                <!-- top, right, bottom, left-->
-                                <Label Text="Restaurants" Grid.Row="1" Grid.Column="0" FontSize="18" />
-                                <Label Text="Apparel" Grid.Row="1" Grid.Column="1" FontSize="18" />
-                                <Label Text="Events" Grid.Row="1" Grid.Column="2" FontSize="18" />
-                                <Label Text="Art" Grid.Row="1" Grid.Column="3" FontSize="18" />
-                                <Label Text="Services" Grid.Row="1" Grid.Column="4" FontSize="18" />
-                            </StackLayout>
-                        </Grid>
-                        <!-- second Grid to begin Image horizontal scroll for views of the categories -->
 
-                        <Label Text="Top Rated:" FontSize="24" />
-                        
-                        <!-- begin scroll of images -->
-                        <CollectionView ItemsSource="{Binding Pictures}" ItemsLayout="HorizontalList">
-                            <CollectionView.ItemTemplate>
-                                <DataTemplate>
-                                    <Grid Padding="10" Margin="12">
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="3*" />
-                                            <RowDefinition Height="2*" />
-                                        </Grid.RowDefinitions>
-
-                                        <Image Source="{Binding ImageUrl}" Grid.Row="0" Aspect="AspectFill" WidthRequest="100" HeightRequest="150" />
-                                        <StackLayout Grid.Row="1">
-                                            <Label Grid.Column="1" VerticalOptions="Center" Text="{Binding Name}" FontAttributes="Bold" />
-                                            <Label Text="{Binding ShortDescription}" Grid.Row="1" Grid.Column="1" VerticalOptions="Start" FontAttributes="Italic" />
-                                        </StackLayout>
-                                    </Grid>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                        <!--  -->
-                    </StackLayout>
-                </ScrollView>
-            </StackLayout>
-            
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Source="Banner_1.png" Aspect="Fill" HeightRequest="300" VerticalOptions="StartAndExpand" />
+        <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="20,50">
+            <ImageButton Source="Menu_icon_1.png" WidthRequest="30" HeightRequest="30" HorizontalOptions="Start" VerticalOptions="Center" />
+            <Label Text="St. Louis, MO" FontSize="16" VerticalOptions="Center" TextColor="White"/>
         </StackLayout>
-    </ContentPage.Content>
+        <StackLayout Orientation="Vertical" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image Source="weather.png" WidthRequest="50" HeightRequest="50" VerticalOptions="Center"/>
+                <Label Text="12" TextColor="White" FontSize="70" FontAttributes="Bold" VerticalOptions="Center"/>
+                <Label Text="°C" TextColor="White" FontSize="34" VerticalOptions="Center"/>
+            </StackLayout>
+            <Label Text="Light intensity drizzle rain" TextColor="White" FontSize="16" HorizontalOptions="Center"/>
+            <Label Text="June 15, 09:03 AM" TextColor="White" FontSize="12" HorizontalOptions="Center"/>
+        </StackLayout>
+        <Frame Grid.Row="1" HasShadow="True" CornerRadius="10" Margin="20,-40,20,0" Padding="0" HeightRequest="120" VerticalOptions="Start">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                    <Image Source="Food_icon.png" HeightRequest="50" HorizontalOptions="Center"/>
+                    <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
+                        <Label Text="50%" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Food" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                    <Image Source="Clothes_icon.png" HeightRequest="50" HorizontalOptions="Center"/>
+                    <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
+                        <Label Text="2.6 m/s" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Apparel" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                    <Image Source="Events_icon.png" HeightRequest="50" HorizontalOptions="Center"/>
+                    <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
+                        <Label Text="1011 hpa" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Events" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                    <Image Source="Art_icon.png" HeightRequest="50" HorizontalOptions="Center"/>
+                    <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
+                        <Label Text="24%" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Art" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Column="4" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                    <Image Source="Services_icon.png" HeightRequest="50" HorizontalOptions="Center"/>
+                    <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
+                        <Label Text="24%" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Services" TextColor="#7D7D7D" FontSize="11" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </Frame>
+        <StackLayout Grid.Row="2" BackgroundColor="Transparent" Orientation="Horizontal" Margin="20" HorizontalOptions="End">
+            <ImageButton x:Name="ListBtn" Source="listColor.png" WidthRequest="15" HeightRequest="15" />
+            <ImageButton x:Name="GridBtn" Source="grid.png" WidthRequest="15" HeightRequest="15"/>
+        </StackLayout>
+        <ListView x:Name="WeatherForecastList" ItemsSource="{Binding Weathers}" SeparatorVisibility="None"
+                  Grid.Row="3" Margin="20,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <ViewCell>
+                        <Frame BackgroundColor="White" BorderColor="#F0F0F0" Padding="5" Margin="0,0,0,5" HasShadow="False">
+                            <Grid HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding Date}" TextColor="#757575" FontSize="12" VerticalOptions="Center" Margin="20,0"/>
+                                <Image Grid.Column="1" Source="{Binding Icon}" WidthRequest="38" HeightRequest="38" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                <StackLayout Grid.Column="2" Orientation="Horizontal" Margin="20,0" HorizontalOptions="End" VerticalOptions="Center">
+                                    <Label Text="{Binding Temp}" TextColor="Black" FontSize="30" FontAttributes="Bold" VerticalOptions="Center"/>
+                                    <Label Text="°C" TextColor="Black" FontSize="15" VerticalOptions="Center"/>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+
 </ContentPage>
